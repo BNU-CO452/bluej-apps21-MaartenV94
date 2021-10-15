@@ -1,0 +1,77 @@
+ Student ID: 21424839 Name: Maarten Vanderbeeken
+maarten.print();
+ Student ID: 21424839 Name: Maarten Vanderbeeken
+Course compWeb = new Course("BT1CWD1", "BSc (hons) Computing & Web");
+compWeb.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc (hons) Computing & Web
+
+maarten.enrol(compWeb);
+maarten.print();
+ Student ID: 21424839 Name: Maarten Vanderbeeken
+compWeb.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc (hons) Computing & Web
+
+maarten.print();
+ Student ID: 21424839 Name: Maarten Vanderbeeken
+compWeb.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc (hons) Computing & Web
+
+Module co452 = new Module("CO452", "Programming Concepts");
+co452.getTitle()
+    returned String "Programming Concepts"
+co452.getCredit()
+    returned int 0
+co452.getCode()
+    returned String "CO452"
+co452.print();
+ Module Code: CO452: Programming Concepts
+
+Module co452 = new Module("CO452", "Programming concepts");
+co452.getCode()
+    returned String "CO452"
+co452.getCredit()
+    returned int 0
+co452.getTitle()
+    returned String "Programming concepts"
+co452.setCredit(15);
+co452.getCredit()
+    returned int 15
+co452.print();
+ Module Code: CO452: Programming concepts
+ Credit: 15
+
+co452.setCredit(0);
+co452.print();
+ Module Code: CO452: Programming concepts
+ Credit: 0
+
+co452.setCredit(15);
+co452.print();
+ Module Code: CO452: Programming concepts
+ Credit: 15
+
+Module co452 = new Module("CO452", "Programming concepts");
+Course CompWeb = new Course("BT1CWD1", "BSc (Hons) Computing & Web");
+CompWeb.assignModule(co452);
+CompWeb.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc (Hons) Computing & Web
+ Module Code: CO452: Programming concepts
+ Credit: 0
+
+
