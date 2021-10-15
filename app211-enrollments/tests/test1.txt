@@ -1,0 +1,11 @@
+ Student ID: 21424839 Name: Maarten Vanderbeeken
+maarten.print();
+ Student ID: 21424839 Name: Maarten Vanderbeeken
+Course compWeb = new Course("BT1CWD1", "BSc (hons) Computing & Web");
+compWeb.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc (hons) Computing & Web
+
