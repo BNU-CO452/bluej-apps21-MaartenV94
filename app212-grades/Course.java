@@ -3,8 +3,8 @@ import java.util.ArrayList;
  * This class stores information about a course
  * that enrolled students may want to complete
  *
- * @author Derek Peacock and Nicholas Day
- * @version 0.1 11/Sep/2020
+ * @author Maarten Vanderbeeken
+ * @version 0.2 29/Oct/2020
  */
 public class Course
 {
@@ -17,9 +17,12 @@ public class Course
     
     private Grades finalGrade;
      
+    /**
+     * This constructor will create a course object with set code and title.
+     */
     public Course()
     {
-        this("G400", "BSc Computing");
+        this("G400", "BSc (Hons) Computing");
     }
     
     /**
@@ -43,6 +46,17 @@ public class Course
      */
     public void createModules()
     {
+        Module moduleCO452 = new Module("CO452", "Programming concepts:");
+        addModule(moduleCO452);
+        
+        Module moduleCO450 = new Module("CO450", "Computer Architectures:");
+        addModule(moduleCO450);
+        
+        Module moduleCO454 = new Module("CO454", "Digital Technologies And Professional Practice:");
+        addModule(moduleCO454);
+        
+        Module moduleCO456 = new Module("CO456", "Web Development:");
+        addModule(moduleCO456);
 
     }
     
@@ -59,6 +73,27 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
+        Grades grade = Grades.NS;
+        if(mark > Grades.B.getValue())
+        {
+            return Grades.A;
+        }
+        else if(mark > Grades.C.getValue()) 
+        {
+            return Grades.B;
+        }
+        else if(mark > Grades.D.getValue())
+        {
+            return Grades.C;
+        }
+        else if (mark > Grades.F.getValue())
+        {
+            return Grades.D;
+        }
+        else if (mark > Grades.NS.getValue())
+        {
+            return Grades.F;
+        }
         return Grades.NS;
     }
     
@@ -89,6 +124,16 @@ public class Course
      */
     public void printModules()
     {
+        System.out.println("Course Module");
+        System.out.println("--------------");
+        System.out.println();
+        
+        for(Module module : modules)
+        {
+            System.out.println("\t" + module.getCode());
+            System.out.println("\t" + module.getTitle());
+        }
+        
         System.out.println();
     }
 }
