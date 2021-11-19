@@ -103,7 +103,13 @@ public class Course
      */
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
-        return Grades.NS;
+        int total = 0;
+        for(ModuleMark mark: marks)
+        {
+            total=total + mark.getValue();
+        }
+        int finalMark = total/4;
+        return convertToGrade(finalMark);
     }
     
     /**
