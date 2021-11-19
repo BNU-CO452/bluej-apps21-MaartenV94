@@ -1,0 +1,24 @@
+Product product2 = new Product(111, "Apple Iphone 14");
+product2.print();
+ ID 111: Apple Iphone 14 stock level: 0
+product2.decreaseQuantity(10);
+product2.print();
+ ID 111: Apple Iphone 14 stock level: 0
+product2.increaseQuantity(20);
+product2.print();
+ ID 111: Apple Iphone 14 stock level: 20
+product2.decreaseQuantity(10);
+product2.print();
+ ID 111: Apple Iphone 14 stock level: 10
+Product product3 = new Product(112, "Samsung s21");
+StockList maartenPhoneShop = new StockList();
+maartenPhoneShop.add(product2);
+maartenPhoneShop.add(product3);
+maartenPhoneShop.print();
+
+ Maarten's Stock List
+ ====================
+
+ ID 111: Apple Iphone 14 stock level: 10
+ ID 112: Samsung s21 stock level: 0
+

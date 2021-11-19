@@ -1,0 +1,87 @@
+StockList maartensPhoneShop = new StockList();
+StockDemo stockDem2 = new StockDemo(maartensPhoneShop);
+stockDem2.runDemo();
+
+ Maarten's Stock List
+ ====================
+
+ ID 101: Apple Iphone 12 stock level: 0
+ ID 102: Apple iPhone 12 Pro stock level: 0
+ ID 103: Apple Iphone 12 Pro Max stock level: 0
+ ID 104: Apple Iphone 13 stock level: 0
+ ID 105: Apple Iphone 13 Pro stock level: 0
+ ID 106: Apple Iphone 13 Pro Max stock level: 0
+ ID 107: Google Pixel 3A stock level: 0
+ ID 108: Google Pixel 4A stock level: 0
+ ID 109: Samsung Galaxy S19 stock level: 0
+ ID 110: Samsung Galaxy s20 stock level: 0
+
+Bought 300 of Apple Iphone 12
+Bought 250 of Apple iPhone 12 Pro
+Bought 55 of Apple Iphone 12 Pro Max
+Bought 120 of Apple Iphone 13
+Bought 205 of Apple Iphone 13 Pro
+Bought 50 of Apple Iphone 13 Pro Max
+Bought 85 of Google Pixel 3A
+Bought 120 of Google Pixel 4A
+Bought 200 of Samsung Galaxy S19
+Bought 15 of Samsung Galaxy s20
+
+ Maarten's Stock List
+ ====================
+
+ ID 101: Apple Iphone 12 stock level: 300
+ ID 102: Apple iPhone 12 Pro stock level: 250
+ ID 103: Apple Iphone 12 Pro Max stock level: 55
+ ID 104: Apple Iphone 13 stock level: 120
+ ID 105: Apple Iphone 13 Pro stock level: 205
+ ID 106: Apple Iphone 13 Pro Max stock level: 50
+ ID 107: Google Pixel 3A stock level: 85
+ ID 108: Google Pixel 4A stock level: 120
+ ID 109: Samsung Galaxy S19 stock level: 200
+ ID 110: Samsung Galaxy s20 stock level: 15
+
+Sold 30 of Apple Iphone 12
+Sold 100 of Apple iPhone 12 Pro
+Sold 20 of Apple Iphone 12 Pro Max
+Sold 80 of Apple Iphone 13
+Sold 40 of Apple Iphone 13 Pro
+Can't sell 50 of Apple Iphone 13 Pro Max because only have 50
+Can't sell 85 of Google Pixel 3A because only have 85
+Can't sell 130 of Google Pixel 4A because only have 120
+Sold 100 of Samsung Galaxy S19
+Sold 10 of Samsung Galaxy s20
+
+ Maarten's Stock List
+ ====================
+
+ ID 101: Apple Iphone 12 stock level: 270
+ ID 102: Apple iPhone 12 Pro stock level: 150
+ ID 103: Apple Iphone 12 Pro Max stock level: 35
+ ID 104: Apple Iphone 13 stock level: 40
+ ID 105: Apple Iphone 13 Pro stock level: 165
+ ID 106: Apple Iphone 13 Pro Max stock level: 50
+ ID 107: Google Pixel 3A stock level: 85
+ ID 108: Google Pixel 4A stock level: 120
+ ID 109: Samsung Galaxy S19 stock level: 100
+ ID 110: Samsung Galaxy s20 stock level: 5
+
+maartensPhoneShop.remove(110);
+maartensPhoneShop.searchProduct("Apple");
+
+Search List: Products starting with Apple
+=====================================
+
+ ID 101: Apple Iphone 12 stock level: 270
+ ID 102: Apple iPhone 12 Pro stock level: 150
+ ID 103: Apple Iphone 12 Pro Max stock level: 35
+ ID 104: Apple Iphone 13 stock level: 40
+ ID 105: Apple Iphone 13 Pro stock level: 165
+ ID 106: Apple Iphone 13 Pro Max stock level: 50
+maartensPhoneShop.listLowStock();
+
+Search List: Products with low stock 
+=====================================
+
+ ID 103: Apple Iphone 12 Pro Max stock level: 35
+ ID 104: Apple Iphone 13 stock level: 40
