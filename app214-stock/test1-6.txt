@@ -1,0 +1,200 @@
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > quit
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > add
+Adding a new Product
+
+Please enter a product id > 
+201
+Please enter the product name > 
+Your input is blank!
+
+Please enter the product name > Apple Iphone 14
+Item added successfully
+
+ Maarten's Stock List
+ ====================
+
+ ID 101: Apple Iphone 12 stock level: 0
+ ID 102: Apple iPhone 12 Pro stock level: 0
+ ID 103: Apple Iphone 12 Pro Max stock level: 0
+ ID 104: Apple Iphone 13 stock level: 0
+ ID 105: Apple Iphone 13 Pro stock level: 0
+ ID 106: Apple Iphone 13 Pro Max stock level: 0
+ ID 107: Google Pixel 3A stock level: 0
+ ID 108: Google Pixel 4A stock level: 0
+ ID 109: Samsung Galaxy S19 stock level: 0
+ ID 110: Samsung Galaxy s20 stock level: 0
+ ID 201: Apple Iphone 14 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > add
+Adding a new Product
+
+Please enter a product id > 
+201
+Please enter the product name > 
+Your input is blank!
+
+Please enter the product name > Apple Iphone 14
+Error - Item already exists
+
+ Maarten's Stock List
+ ====================
+
+ ID 101: Apple Iphone 12 stock level: 0
+ ID 102: Apple iPhone 12 Pro stock level: 0
+ ID 103: Apple Iphone 12 Pro Max stock level: 0
+ ID 104: Apple Iphone 13 stock level: 0
+ ID 105: Apple Iphone 13 Pro stock level: 0
+ ID 106: Apple Iphone 13 Pro Max stock level: 0
+ ID 107: Google Pixel 3A stock level: 0
+ ID 108: Google Pixel 4A stock level: 0
+ ID 109: Samsung Galaxy S19 stock level: 0
+ ID 110: Samsung Galaxy s20 stock level: 0
+ ID 201: Apple Iphone 14 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > remove
+Removing a Product
+
+Please enter a product id > 
+201
+Please enter the product name > 
+Your input is blank!
+
+Please enter the product name > Apple Iphone 14
+Successfully removed item
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > print
+
+ Maarten's Stock List
+ ====================
+
+ ID 101: Apple Iphone 12 stock level: 0
+ ID 102: Apple iPhone 12 Pro stock level: 0
+ ID 103: Apple Iphone 12 Pro Max stock level: 0
+ ID 104: Apple Iphone 13 stock level: 0
+ ID 105: Apple Iphone 13 Pro stock level: 0
+ ID 106: Apple Iphone 13 Pro Max stock level: 0
+ ID 107: Google Pixel 3A stock level: 0
+ ID 108: Google Pixel 4A stock level: 0
+ ID 109: Samsung Galaxy S19 stock level: 0
+ ID 110: Samsung Galaxy s20 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > remove
+Removing a Product
+
+Please enter a product id > 
+201
+Please enter the product name > 
+Your input is blank!
+
+Please enter the product name > Apple Iphone 14
+
+Item not found
+
+ Maarten's Stock List
+ ====================
+
+ ID 101: Apple Iphone 12 stock level: 0
+ ID 102: Apple iPhone 12 Pro stock level: 0
+ ID 103: Apple Iphone 12 Pro Max stock level: 0
+ ID 104: Apple Iphone 13 stock level: 0
+ ID 105: Apple Iphone 13 Pro stock level: 0
+ ID 106: Apple Iphone 13 Pro Max stock level: 0
+ ID 107: Google Pixel 3A stock level: 0
+ ID 108: Google Pixel 4A stock level: 0
+ ID 109: Samsung Galaxy S19 stock level: 0
+ ID 110: Samsung Galaxy s20 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > 

@@ -5,7 +5,7 @@
  * print and remove stock products
  *
  * @author Maarten Vanderbeeken
- * @version 0.1
+ * @version 0.1 (2021.01.11)
  */
 public class StockApp
 {
@@ -65,41 +65,78 @@ public class StockApp
         }
         else if(choice.equals("buy"))
         {
-            buyProduct();
+            runBuy();
+        }
+        else if(choice.equals("sell"))
+        {
+            runSell();
+        }
+        else if(choice.equals("search"))
+        {
+            runSearch();
+        }
+        else if(choice.equals("low stock"))
+        {
+            runLowStock();
         }
         
         return false;
     }
     
-    private void buyProduct(int productID, int amount) 
+    /**
+     * Method to view list of low stock.
+     */
+    private void runLowStock()
+    {
+        System.out.println("Show a list of low stock > ");
+        System.out.println(); 
+         
+        stock.listLowStock(); 
+    }
+    
+    /**
+     * Method to search for item by name.
+     */
+    private void runSearch()
+    {
+         System.out.println("Search for a product by name > ");
+         System.out.println(); 
+         
+         String name = reader.getString("Please enter a product name > ");
+         
+         stock.searchProduct(name);
+    }
+    
+    /**
+     * Method to buy new stock.
+     */
+    private void runBuy() 
     {
          System.out.println("Buying more products");
          System.out.println();
              
          int id = reader.getInt("Please enter a product id > ");
-         
-         Product product = stock.findProduct(id);
-         if(product != null) 
-        {
-            if(product.getQuantity() < 1000)
-            {
-                product.increaseQuantity(amount);
-                System.out.println("Bought " + amount + " of " + product.getName());
-            }
-            else
-            {
-                System.out.println("Not enough shelf space for" + product.getName() + 
-                                    ". Please sell the exsisting stock ");
-            }
-        }
-        else
-        {
-            System.out.println("couldn't find product");
-        }
+         int amount = reader.getInt("Please enter the amount you want to buy > ");
 
-         stock.buyProduct(id);
+         stock.buyProduct(id, amount);
          stock.print();
          
+         System.out.println("You have just added some new stock > ");
+    }
+    
+    /**
+     * Method to sell existing products.
+     */
+    private void runSell()
+    {
+        System.out.println("Selling products");
+        System.out.println();
+        
+        int id = reader.getInt("Please enter a product id > ");
+        int amount = reader.getInt("Please enter the amount you want to sell > ");
+        
+        stock.sellProduct(id, amount);
+        stock.print();
     }
     
      /** 
@@ -107,20 +144,27 @@ public class StockApp
      */
     private void removeProduct() 
     {
-         System.out.println("Removing a old Product");
+         System.out.println("Removing a Product");
          System.out.println();
              
          int id = reader.getInt("Please enter a product id > ");
+         String name = reader.getString("Please enter the product name > ");
          
          Product product = stock.findProduct(id);
          
          if(product != null)
+         {
              stock.remove(product);
+             System.out.println("Successfully removed item");
+         }
          else
-             System.out.println("Not found");
+         {
+             System.out.println();
+             System.out.println("Item not found");
              
-         stock.remove(product);
-         stock.print(); 
+             stock.remove(product);
+             stock.print(); 
+         }
     }
     
     /**
@@ -134,10 +178,21 @@ public class StockApp
          int id = reader.getInt("Please enter a product id > ");
          String name = reader.getString("Please enter the product name > ");
              
-         Product product = new Product(id, name);
-             
-         stock.add(product);
+         Product checkproduct = stock.findProduct(id);
+         
+         if(checkproduct != null)
+         {
+             System.out.println("Error - Item already exists");
+         }
+         else
+         {
+             Product product = new Product(id, name);
+         
+             stock.add(product);
+             System.out.println("Item added successfully");
+         }
          stock.print();
+         
     }
     
     /**
@@ -151,7 +206,10 @@ public class StockApp
         System.out.println("    Print:      Print all products");
         System.out.println("    Quit:       Quit the program");
         System.out.println("    Buy:        Buy more products"); 
-        System.out.println(); 
+        System.out.println("    Sell:       Sell  old products"); 
+        System.out.println("    Search:     Search for products by name");
+        System.out.println("    Low stock:  View products with low stock");
+        System.out.println();
     }
     
     /**

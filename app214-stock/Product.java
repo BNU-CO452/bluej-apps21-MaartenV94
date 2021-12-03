@@ -2,7 +2,7 @@
  * Model some details of a product sold by a company.
  * 
  * @author Maarten Vanderbeeken.
- * @version 14/11/2021.
+ * @version 0.1 (2021.01.11)
  */
 public class Product
 {

@@ -1,0 +1,156 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > buy
+Buying more products
+
+Please enter a product id > 
+101
+Please enter the amount you want to buy > 
+4
+Bought 4 of Apple Iphone 12
+
+ Maarten's Stock List
+ ====================
+
+ ID 101: Apple Iphone 12 stock level: 4
+ ID 102: Apple iPhone 12 Pro stock level: 0
+ ID 103: Apple Iphone 12 Pro Max stock level: 0
+ ID 104: Apple Iphone 13 stock level: 0
+ ID 105: Apple Iphone 13 Pro stock level: 0
+ ID 106: Apple Iphone 13 Pro Max stock level: 0
+ ID 107: Google Pixel 3A stock level: 0
+ ID 108: Google Pixel 4A stock level: 0
+ ID 109: Samsung Galaxy S19 stock level: 0
+ ID 110: Samsung Galaxy s20 stock level: 0
+
+You have just added some new stock > 
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > sell
+Selling products
+
+Please enter a product id > 
+101 
+Please enter the amount you want to sell > 
+3
+Sold 3 of Apple Iphone 12
+
+ Maarten's Stock List
+ ====================
+
+ ID 101: Apple Iphone 12 stock level: 1
+ ID 102: Apple iPhone 12 Pro stock level: 0
+ ID 103: Apple Iphone 12 Pro Max stock level: 0
+ ID 104: Apple Iphone 13 stock level: 0
+ ID 105: Apple Iphone 13 Pro stock level: 0
+ ID 106: Apple Iphone 13 Pro Max stock level: 0
+ ID 107: Google Pixel 3A stock level: 0
+ ID 108: Google Pixel 4A stock level: 0
+ ID 109: Samsung Galaxy S19 stock level: 0
+ ID 110: Samsung Galaxy s20 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > 
+Your input is blank!
+
+Please enter your choice > search
+Search for a product by name > 
+
+Please enter a product name > Apple
+
+Search List: Products starting with Apple
+=====================================
+
+ ID 101: Apple Iphone 12 stock level: 1
+ ID 102: Apple iPhone 12 Pro stock level: 0
+ ID 103: Apple Iphone 12 Pro Max stock level: 0
+ ID 104: Apple Iphone 13 stock level: 0
+ ID 105: Apple Iphone 13 Pro stock level: 0
+ ID 106: Apple Iphone 13 Pro Max stock level: 0
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > low stock
+Show a list of low stock > 
+
+
+Search List: Products with low stock 
+=====================================
+
+ ID 101: Apple Iphone 12 stock level: 1
+ ID 102: Apple iPhone 12 Pro stock level: 0
+ ID 103: Apple Iphone 12 Pro Max stock level: 0
+ ID 104: Apple Iphone 13 stock level: 0
+ ID 105: Apple Iphone 13 Pro stock level: 0
+ ID 106: Apple Iphone 13 Pro Max stock level: 0
+ ID 107: Google Pixel 3A stock level: 0
+ ID 108: Google Pixel 4A stock level: 0
+ ID 109: Samsung Galaxy S19 stock level: 0
+ ID 110: Samsung Galaxy s20 stock level: 0
+********************************
+  App21-04: Stock Application 
+      by Maarten Vanderbeeken
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy more products
+    Sell:       Sell  old products
+    Search:     Search for products by name
+    Low stock:  View products with low stock
+
+Please enter your choice > 
